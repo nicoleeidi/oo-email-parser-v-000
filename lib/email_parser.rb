@@ -8,8 +8,8 @@ class EmailParser
     @emails=emails
   end
   def parse
-    @emails.split!(/[\s,]/)
-    return @emails.uniq
+    array= @emails.split(/[\s,]/)
+    return array.uniq
   end
 
 end
