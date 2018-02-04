@@ -10,7 +10,7 @@ class EmailParser
   def parse
     array= @emails.split(/[\s,]/)
     array.map do |email|
-      if email == "" 
+      if email == ""
         array.delete(email)
       end
     end
