@@ -9,6 +9,11 @@ class EmailParser
   end
   def parse
     array= @emails.split(/[\s,]/)
+    array.map do |email|
+      if email == "" || " "
+        array.delete(email)
+      end 
+    end 
     return array.uniq
   end
 
