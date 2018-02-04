@@ -11,7 +11,7 @@ class EmailParser
     array= @emails.split(/[\s,]/)
     array.map do |email|
       if email == "" || " "
-        array.delete!(email)
+        array.delete(email)
       end
     end
     return array.uniq
